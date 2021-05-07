@@ -1,0 +1,11 @@
+extend layout 
+
+block content 
+      h1 Author List
+      ul 
+        each author in author_list
+            li
+              a(href=author.url) #{author.name}
+        else 
+             li there are no books     
+
